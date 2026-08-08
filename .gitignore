@@ -1,0 +1,61 @@
+# ===================================================
+# .gitignore for BAREC-HP-2026
+# ===================================================
+
+# 1. Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 2. Virtual Environments
+venv/
+env/
+.env/
+.venv/
+env.bak/
+venv.bak/
+
+# 3. Jupyter Notebook
+.ipynb_checkpoints/
+
+# 4. Data files (Raw & Processed)
+# Ngăn việc push nhầm dữ liệu nặng lên Github
+data/raw/*
+data/processed/*
+*.parquet
+*.npy
+*.csv
+
+# Ngoại lệ: Giữ lại cấu trúc thư mục data (cần tạo file .gitkeep rỗng trong các thư mục này)
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# 5. Models & Checkpoints
+# Ngăn push các file trọng số (model weights) khổng lồ
+saved_models/*
+!saved_models/.gitkeep
+model/*
+!model/.gitkeep
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.msgpack
+*.ot
+
+# 6. Project Specific Outputs (File nộp bài)
+prediction
+prediction_*.zip
+*.zip
+
+# 7. IDEs and OS files (File rác hệ thống & Editor)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 8. Hugging Face Cache
+.cache/

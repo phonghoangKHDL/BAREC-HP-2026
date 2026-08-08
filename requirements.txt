@@ -1,0 +1,33 @@
+# ==============================================================================
+# IMPORTANT: Install PyTorch with GPU (CUDA) support FIRST before running this!
+# 
+# For GPU (CUDA 12.1):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# For CPU only:
+#   pip install torch
+# ==============================================================================
+
+# --- Core Data Science & Math ---
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+pyarrow>=11.0.0
+
+# --- Hugging Face Ecosystem & Acceleration ---
+accelerate>=0.20.0
+transformers>=4.30.0
+datasets>=2.12.0
+peft>=0.4.0
+
+# --- Arabic Text Preprocessing ---
+arabert>=1.0.0
+
+# --- Tree-based Ensembling & Meta-learning ---
+lightgbm>=3.3.0
+
+# --- Visualization & Utilities ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+ipywidgets>=8.0.0
+jupyterlab>=4.0.0
